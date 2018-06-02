@@ -1,0 +1,88 @@
+.top{
+	height:100px; 
+	text-align:center; 
+	padding-top:50px;
+	font-family:tahoma;
+	font-size:28px;
+	color:#FFFFFF;
+	}
+.bglogin
+{
+	background: url(bg.gif);
+	width:555px;
+	height:469px;
+	
+}
+.text_content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	line-height: 18px;
+}
+.whitetext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 18px;
+}
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	line-height: 18px;
+}
+.breadcrums {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #5F5F5F;
+	text-decoration: none;
+}
+.sideLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	padding: 3px;
+	line-height: 22px;
+}
+.box1 {
+	border: 1px solid #A4A4A5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #EEA239;
+}
+.box {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #333333;
+	border: 1px solid #A4A4A4;
+}
+.txtbox {
+	font-family: verdana;
+	font-size: 10px;
+	color: black;
+	text-decoration: none;
+	border: 1px solid #A4A4A4;
+	
+}
+.maintitle {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 23px;
+	color: #790914;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.red{font-family:Arial, Helvetica, sans-serif; color:#FF0000; line-height:18px; padding-left:5px;}

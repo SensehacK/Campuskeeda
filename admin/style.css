@@ -1,0 +1,9 @@
+
+.grey #waxcontainer{position:relative;height:48px;background:#E3E3E3;width:100%;font-family:"Trebuchet MS",Arial,Verdana,Helvitica,sans-serif;}
+.grey #waxnav{position:relative;height:25px;font-size:11px;font-weight:bold;background:#fff url(greywax_bottom.gif) repeat-x bottom left;}
+.grey #waxnav ul{margin:0px;padding:0 0 4px 0;list-style-type:none;width:auto;float:right;}
+.grey #waxnav ul li{display:block;float:left;margin:0 1px;}
+.grey #waxnav ul li a{display:block;float:left;color:#414141;text-decoration:none;padding:0 0 0 12px;height:21px;line-height:195%;}
+.grey #waxnav ul li a span{padding:0 12px 0 0;}
+.grey #waxnav ul li a:hover,.grey #waxnav ul li a.current{color:#fff;background:#575757 url(greywax_navtopleft.gif) no-repeat top left;}
+.grey #waxnav ul li a:hover span,.grey #waxnav ul li a.current span{display:block;width:auto;background:#575757 url(greywax_navtopright.gif) no-repeat top right;}
