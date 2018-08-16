@@ -1,0 +1,48 @@
+<html>
+<body>
+<?html
+inclide('db.inc.html');
+$sql1 = "SELECT * FROM poll WHERE answer='yes' AND qid='$xid'" ;
+$result1= mysql_query($sql1);
+$count1 = mysql_num_rows($result1);
+
+$sql2 = "SELECT * FROM poll WHERE answer='no' AND qid='$xid'" ;
+$result2= mysql_query($sql2);
+$count2 = mysql_num_rows($result2);
+
+$count3 = $count1+$count2;
+if($count3 == "0")
+die();
+
+$newcount1 = intval(($count1/$count3)*100);
+$newcount2 = intval(($count2/$count3)*100);
+$dif = 100-$newcount1-$newcount2;
+if(($count1/$count3)*100 > ($count2/$count3)*100)
+{
+	$xnewcount1 = $newcount1+$dif;
+	$xnewcount2 = $newcount2;
+}
+else
+{
+	$xnewcount2 = $newcount2+$dif;
+	$xnewcount1 = $newcount1;
+}
+
+mysql_close($con);
+?>
+<strong>Current Results:</strong>
+<table width="100%">
+<tr>
+<td width="5%"><font color="#006633"><strong>YES</strong></font></td>
+<td width="71%">
+<table width="100%" border="0">
+    <tr>
+      <td width="<?html echo $xnewcount1; ?>%" bgcolor="#006633"><font color="#FFFFFF"><strong><?html echo $xnewcount1;echo "%";?></strong></font></td>
+      <td width="<?html echo $xnewcount2; ?>%" bgcolor="#CC3333"><font color="#FFFFFF"><strong><?html echo $xnewcount2;echo "%";?></strong></font></td>
+    </tr>
+</table>
+</td>
+<td width="5%"><font color="#CC3333"><strong>NO</strong></font></td>
+</tr> 
+</table>
+  </body></html>
