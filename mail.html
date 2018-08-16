@@ -1,0 +1,13 @@
+<?html
+ini_set('SMTP','mail.campuskeeda.com');
+ini_set('smtp_port',25);
+ $to = "htmltraining@campuskeeda.com";
+ $subject = "Hi!";
+ $body = "Hi,\n\nHow are you?";
+ $headers = "From:no-reply@campuskeeda.com";
+ if (mail($to, $subject, $body,$headers)) {
+   echo("<p>Email successfully sent!</p>");
+  } else {
+   echo("<p>Email delivery failed…</p>");
+  }
+ ?>
