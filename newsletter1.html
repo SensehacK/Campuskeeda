@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #0099FF;
+	font-weight: bold;
+}
+.style3 {font-weight: bold; color: #666666;}
+-->
+</style>
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["myForm"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="212" border="0">
+  <tr>
+    <td><div align="center"><img src="images/newsletter_icon.jpg" alt="newsletter" width="224" height="81" /></div></td>
+  </tr>
+  <tr>
+    <td><span class="style1">Subscribe to our newsletter to get updates on latest additions to <br />
+    our site</span></td>
+  </tr>
+</table>
+<form method="post" action="newsletter2.html"  onsubmit="return validateForm();" name="myForm">
+<span class="style3">Your email</span> &nbsp;
+<input name="email" type="text" id="name" value="" />
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" />
+</form>
+<br />
+</body>
+</html>

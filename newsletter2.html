@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title></head>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+
+<body bgcolor="#FFFFFF">
+<font color="#0099FF">Thank you for subscribing.If mail does not appear in inbox, please check your junk folder.
+<?html 
+
+$con = mysql_connect("127.0.0.1:3309","ckadmin","keeda1");
+if(!$con)
+{
+echo "con error1";
+die();
+}
+if(!mysql_select_db("feedback"))
+{
+echo "con error2";
+die();
+}
+$xemail = $_POST['email'];
+$sql1 = "INSERT INTO  emails SET email='$xemail'" ;
+$result= mysql_query($sql1);
+mysql_close($con);
+?>
+</font>
+</body>
+</html>
+
