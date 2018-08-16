@@ -1,0 +1,57 @@
+<html>
+<body>
+<font color="#FFFFFF">
+<?html
+$con = mysql_connect("127.0.0.1:3309","ckadmin","keeda1");
+if(!$con)
+{
+echo "error1";
+die();
+}
+else
+echo "conn done1";
+
+if(!mysql_select_db("feedback"))
+{
+echo "error2";
+die();
+}
+else
+echo "conn done2";
+
+$xname = strip_tags($_POST[name]);
+$xemail = strip_tags($_POST[email]);
+$xcomment = strip_tags($_POST[comment]);
+$xcollege = strip_tags($_POST[college]);
+if($xname=="")
+{
+header("location:site-feedback.html");
+die();
+}
+elseif($xemail=="")
+{
+header("location:site-feedback.html");
+die();
+}
+elseif($xcomment=="")
+{
+header("location:site-feedback.html");
+die();
+}
+elseif($xcollege=="")
+{
+header("location:site-feedback.html");
+die();
+}
+else
+{
+$sql1 = "INSERT INTO  feedback2 SET username='$xname',email='$xemail',comment='$xcomment',college='$xcollege'" ;
+$result= mysql_query($sql1);
+mysql_close($con);
+?><font color="#000000"><?html echo "POSTED SUCCESSFULLY.REDIRECTING.PLEASE WAIT.....";?></font><?html
+header("location:site-feedback.html");
+}
+?>
+</font>
+</body>
+</html>
