@@ -1,0 +1,73 @@
+<?html session_start(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?html
+error_reporting(E_PARSE);  
+$con = mysql_connect("127.0.0.1:3309","ckadmin","keeda1");
+if(!$con)
+{
+echo "con error1";
+die();
+}
+if(!mysql_select_db("feedback"))
+{
+echo "con error2";
+die();
+}
+
+if($_SESSION[vote_count]==null)
+$_SESSION[vote_count]=1;
+else 
+$_SESSION[vote_count]++;
+
+
+
+$sql7 = "SELECT * FROM poll_question ORDER BY qid DESC" ;
+$result7= mysql_query($sql7);
+$rows7 = mysql_fetch_array($result7);
+$xid = $rows7['qid'];
+$sql8 = "SELECT * FROM poll_question WHERE qid='$xid'" ;
+$result8= mysql_query($sql8);
+$rows8 = mysql_fetch_array($result8);
+$xquestion = $rows8['question'];
+$xpoll = strip_tags($_POST['answer']);
+$ip=$_SERVER['REMOTE_ADDR'];
+if($_SESSION[vote_count]<=2)
+{
+if($xpoll!= null)
+{
+$query1 = "INSERT INTO poll SET answer='$xpoll',qid='$xid',ip='$ip'" ;
+$qresult= mysql_query($query1);
+}
+}
+else
+echo "<em>Your vote is already registered</em>";
+?>
+<table width="100%">
+<tr><td width="60%" height="60" align="left" valign="top"><strong><?html echo $xquestion; ?></strong><br />
+  <br />
+<form action="poll.html" method="post">
+  <input type="radio" name="answer" id="answer" value="yes" />
+  <strong>Yes</strong>
+<input type="radio" name="answer" id="answer" value="no" />
+  <strong>No</strong><br />
+  <input type="submit" value="vote!!" />
+</form>
+</td>
+<td width="40%" align="left" valign="top">
+<?html
+include("result.html");
+?>
+</td>
+</tr>
+</table>
+<p><br />
+</p>
+</body>
+</html>
