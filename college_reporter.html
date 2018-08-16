@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta name="keywords" content="about us,mumbai,engineering,colleges,branches,western,central,harbour,outside,affiliated,university,mu,syllabus,question,papers,download,information,semester,sem,electronics,etrx,telecommunication,extc,information,technology,it,computer,comps,cmpn,mechanical engineering,mech,civil,electrical,may,june,dec" /> 
+   
+  <meta name="language" content="English" />
+<title>CampusKeeda - College Reporter</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style2 {color: #DFDCCA; font-weight: bold; }
+.style8 {
+	color: #FF9900;
+	font-weight: bold;
+	font-size: x-large;
+}
+.style7 {
+	color: #000000;
+	font-size: small;
+}
+.style9 {color: #FFFFFF}
+.style11 {color: #000000; font-size: 18px; }
+.style12 {font-size: 18px}
+-->
+</style>
+<link href="*" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 171px;
+	top: 154px;
+}
+-->
+</style>
+<link href="dropdown-menu.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style13 {color: #0066FF}
+.style14 {color: #FF0000}
+-->
+</style>
+
+
+<script type="text/javascript">
+
+function validateallfields()
+{
+var flag1=0;
+var flag2=0;
+var fname = document.forms["register"]["fname"].value.length;
+var lname = document.forms["register"]["lname"].value.length;
+var college = document.forms["register"]["college"].value.length;
+var fblink = document.forms["register"]["fbprofile"].value.length;
+var comment = document.forms["register"]["reason"].value.length;
+var xemail = document.forms["register"]["email"].value;
+var atpos = xemail.indexOf("@");
+var dotpos = xemail.lastIndexOf(".");
+if(document.getElementById('friends').checked)
+var source = "friends";
+else if(document.getElementById('facebook').checked)
+var source = "facebook";
+else if(document.getElementById('advertisements').checked)
+var source = "advertisements";
+else if(document.getElementById('google').checked)
+var source = "google";
+else 
+var source = "none";
+if (document.forms["register"]["agree"].checked)
+var agree = "true";
+else
+var agree = "false";
+if(agree == "false")
+{
+var msg1 = "You must agree to terms and conditions";
+flag1 = 1;
+}
+else
+var msg1 = ""
+if(fname<1 || lname<1 || comment<1 || college<1 || atpos<1 || dotpos<1 || dotpos < atpos+2 || fblink<1 || source=="none")
+{
+var msg2 = "\nIncorrect or Missing data in some fields";
+flag2=1;
+}
+else
+var msg2 = ""
+if(flag1==1 || flag2==1)
+{
+alert(msg1+msg2);
+return false;
+}
+}
+
+</script>
+
+
+
+
+</head>
+<body background="images/body-bg.jpg">
+ <?html include('include.html');?>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24329561-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+
