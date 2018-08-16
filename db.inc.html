@@ -1,0 +1,28 @@
+<?html
+error_reporting(0);
+/*$con = mysql_connect("localhost","root","");
+if(!$con)
+{
+	echo "con error1";
+	die();
+}
+if(!mysql_select_db("kampus_keeda"))
+{
+	echo "con error2";
+	die();
+} */
+/*.................................Live......................................*/
+
+$con = mysql_connect("127.0.0.1:3309","ckadmin","keeda1");
+if(!$con)
+{
+	echo "Connection not established";
+	die();
+}
+if(!mysql_select_db("feedback"))
+{
+	echo "Database could not select";
+	die();
+} 
+
+?>
