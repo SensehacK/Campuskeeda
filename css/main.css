@@ -397,6 +397,11 @@ input.search-form:hover {
 #main-slider .carousel .slider-img{
   text-align: right;
   position: absolute;
+  background: url(CKbanner.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
@@ -431,76 +436,10 @@ input.search-form:hover {
   z-index: 1;
 }
 
-#main-slider .prev,
-#main-slider .next {
-  position: absolute;
-  top: 50%;
-  background-color: #0A35D4;
-  color: #fff;
-  display: inline-block;
-  margin-top: -25px;
-  height: 40px;
-  line-height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 4px;
-  z-index: 5;
-}
 
-#main-slider .prev:hover,
-#main-slider .next:hover {
-  background-color: #000;
-}
 
-#main-slider .prev {
-  left: 10px;
-}
 
-#main-slider .next {
-  right: 10px;
-}
 
-#main-slider .carousel-indicators li {
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  margin: 0 15px 0 0;
-  position: relative;
-}
-
-#main-slider .carousel-indicators li:after {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid #FFF;
-  left: -3px;
-  top: -3px;
-}
-
-#main-slider .carousel-indicators .active{
-  width: 20px;
-  height: 20px;
-  background-color: #0A35D4;
-   margin: 0 15px 0 0;
-   border: 1px solid #0A35D4;
-   position: relative;
-}
-
-#main-slider .carousel-indicators .active:after {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  background: #0A35D4;
-  border: 1px solid #0A35D4;
-  left: -3px;
-  top: -3px;
-}
 
 #main-slider .active .animation.animated-item-1 {
   -webkit-animation: fadeInUp 300ms linear 300ms both;
@@ -510,29 +449,6 @@ input.search-form:hover {
   animation: fadeInUp 300ms linear 300ms both;
 }
 
-#main-slider .active .animation.animated-item-2 {
-  -webkit-animation: fadeInUp 300ms linear 600ms both;
-  -moz-animation: fadeInUp 300ms linear 600ms both;
-  -o-animation: fadeInUp 300ms linear 600ms both;
-  -ms-animation: fadeInUp 300ms linear 600ms both;
-  animation: fadeInUp 300ms linear 600ms both;
-}
-
-#main-slider .active .animation.animated-item-3 {
-  -webkit-animation: fadeInUp 300ms linear 900ms both;
-  -moz-animation: fadeInUp 300ms linear 900ms both;
-  -o-animation: fadeInUp 300ms linear 900ms both;
-  -ms-animation: fadeInUp 300ms linear 900ms both;
-  animation: fadeInUp 300ms linear 900ms both;
-}
-
-#main-slider .active .animation.animated-item-4 {
-  -webkit-animation: fadeInUp 300ms linear 1200ms both;
-  -moz-animation: fadeInUp 300ms linear 1200ms both;
-  -o-animation: fadeInUp 300ms linear 1200ms both;
-  -ms-animation: fadeInUp 300ms linear 1200ms both;
-  animation: fadeInUp 300ms linear 1200ms both;
-}
 
 #feature {
 	background: #f2f2f2;
@@ -654,8 +570,14 @@ input.search-form:hover {
   opacity: 1;
 }
 
+
+
+img , object {
+	max-width:90%;
+	max-height:90%;
+}
 #services {
-	background: #000 url(../images/services/bg_services.png);
+	background: #000 url();
 	background-size: cover;
 	padding-top: 12px;
 	padding-bottom: 14px;
@@ -1754,19 +1676,57 @@ ul.social_icons li  a i{
 
 .pricing-area .heading-five, 
 .pricing-area .price-five .plan-action .btn-primary {
-  background: #5c5c5c
+  background: #ED5D60
 }
 
 .pricing-area .heading-six, 
 .pricing-area .price-six .plan-action .btn-primary {
-  background: #e24f43
+  background: #03BA68
 ;
 }
 
 .pricing-area .heading-seven, 
 .pricing-area .price-seven .plan-action .btn-primary {
-  background: #5c5c5c
+  background:  #A876C6
 }
+
+.pricing-area .heading-eight, 
+.pricing-area .price-eight .plan-action .btn-primary {
+  background: #E8DC00
+}
+
+.pricing-area .heading-nine, 
+.pricing-area .price-nine .plan-action .btn-primary {
+  background: #65B5FF
+}
+.pricing-area .heading-ten,
+.pricing-area .price-ten .plan-action .btn-primary{
+  background:  #905AFA 
+}
+.pricing-area .heading-eleven,
+.pricing-area .price-eleven .plan-action .btn-primary {
+  background:  #007FFF
+}
+.pricing-area .heading-twelve,
+.pricing-area .price-twelve .plan-action .btn-primary {
+  background: #FFC300  
+}
+.pricing-area .heading-thirteen,
+.pricing-area .price-thirteen .plan-action .btn-primary {
+  background: #8452CF 
+}
+.pricing-area .heading-fourteen,
+.pricing-area  .price-fourteen .plan-action .btn-primary {
+  background: #2F95DF  
+}
+.pricing-area .heading-fifteen,
+.pricing-area  .price-fifteen .plan-action .btn-primary {
+  background: #69BB5C  
+}
+
+
+
+
 
 .pricing-area .bg{
  background: #fafafa 
@@ -1789,7 +1749,7 @@ ul.social_icons li  a i{
 }
 
 .pricing-area .heading-five h3:before {
-  border-color: #424242 transparent transparent;
+  border-color: #21FF00 transparent transparent;
 }
 
 .pricing-area .heading-six h3:before {
@@ -1798,6 +1758,32 @@ ul.social_icons li  a i{
 
 .pricing-area .heading-seven h3:before {
   border-color: #424242 transparent transparent;
+}
+
+
+.pricing-area .heading-eight h3:before {
+  border-color: #21FF00 transparent transparent;
+}
+.pricing-area .heading-nine h3:before {
+  border-color: #03D389 transparent transparent;
+}
+.pricing-area .heading-ten h3:before {
+  border-color: #007FFF transparent transparent;
+}
+.pricing-area .heading-eleven h3:before {
+  border-color: #905AFA transparent transparent;
+}
+.pricing-area .heading-twelve h3:before {
+  border-color: #FFC300 transparent transparent;
+}
+.pricing-area .heading-thirteen h3:before {
+  border-color: #8452CF transparent transparent;
+}
+.pricing-area .heading-fourteen h3:before {
+  border-color: #2F95DF transparent transparent;
+}
+.pricing-area .heading-fifteen h3:before {
+  border-color: #69BB5C transparent transparent;
 }
 
 .pricing-area h3:before {
