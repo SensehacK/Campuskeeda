@@ -185,7 +185,7 @@ body > section {
 .top-bar {
 	padding-right: 0;
 	padding-left: 0;
-	background: #000000;
+	background: #191819;
 	border-bottom: 1px solid #222;
 	margin-bottom: 0px;
 }
@@ -266,7 +266,7 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #000000;
+  background: #191819;
   padding: 15px 0;
   padding-bottom: 0;
 }
