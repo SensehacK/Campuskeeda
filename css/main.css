@@ -24,8 +24,8 @@ h6 {
 }
 
 h1{
-  font-size: 36px;
-  color:#fff;
+	font-size: 36px;
+	color: #000000;
 }
 
 h2{
@@ -119,8 +119,7 @@ body > section {
 }
 
 .center {
-  text-align: center;
-  padding-bottom: 55px;
+	text-align: center;
 }
 
 .scaleIn {
@@ -453,16 +452,20 @@ input.search-form:hover {
 #feature {
 	background: #f2f2f2;
 	padding-bottom: 0px;
-	padding-top: 10px;
+	padding-top: 0px;
 }
 
+#feature2 {
+	background: #f2f2f2;
+	padding-bottom: 0px;
+}
 .features{
   padding: 0;
 }
 
 .feature-wrap {
-  margin-bottom: 35px;
-  overflow: hidden;
+	margin-bottom: 38px;
+	overflow: hidden;
 }
 
 .feature-wrap h2{
@@ -507,8 +510,8 @@ input.search-form:hover {
 }
 
 #recent-works{
-	padding-bottom: 70px;
-	margin-top: -58px;
+	padding-bottom: 20px;
+	padding-top: 17px;
 }
 
 .recent-work-wrap {
@@ -579,8 +582,8 @@ img , object {
 #services {
 	background: #000 url();
 	background-size: cover;
-	padding-top: 12px;
-	padding-bottom: 14px;
+	padding-top: 18px;
+	padding-bottom: 0px;
 }
 
 #services .lead,
@@ -903,8 +906,11 @@ a.accordion-toggle  i{
 }
 
 #conatcat-info{
-  background: #fff  no-repeat 90% 0;
-  padding: 30px 0;
+	background: #fff  no-repeat 90% 0;
+	padding-top: 8px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0px;
 }
 
 .contact-info i{
@@ -2463,11 +2469,10 @@ shortcodes page css
 }
 
 #bottom h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-size:22px;
-  color: #000;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #000;
 }
 
 #bottom ul {
