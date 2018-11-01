@@ -573,12 +573,13 @@ input.search-form:hover {
   opacity: 1;
 }
 
-
-
 img , object {
 	max-width:90%;
 	max-height:90%;
 }
+
+
+
 #services {
 	background: #000 url();
 	background-size: cover;
