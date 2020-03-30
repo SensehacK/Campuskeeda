@@ -13,7 +13,7 @@
   Depending on your preferences you can use any IDE / Text editor to open the project files.
   I recommend using some type of IDE like "Adobe Dreamweaver" or "Eclipse" or "Visual Studio Code".
 
-  Dev Build : [Link](https://sensehack.github.io/Campuskeeda/)
+  Dev Build : [Link](https://sensehack.github.io/campuskeeda/)
   
 ## Contribution
 
